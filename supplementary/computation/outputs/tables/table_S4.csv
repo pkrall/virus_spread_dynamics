@@ -1,0 +1,19 @@
+group,step,Y_share_of_seeding_%,I_X/k,I_Y/k,(I_X+I_Y)/k
+right (exact),0,0,8.2251,0.0,8.2251
+right (exact),10,20,7.8465,0.679,8.5255
+right (exact),25,50,6.0279,3.7407,9.7686
+right (exact),40,80,3.6576,7.1228,10.7804
+right (exact),50,100,2.0259,9.4013,11.4273
+right (exact),60,100,0.7635,11.0039,11.7674
+right (exact),80,100,0.0631,11.3901,11.4532
+right (exact),max (step 58),100,0.9594,10.8336,11.793
+right (exact),stationary,100,0.0,11.4127,11.4127
+left (Monte Carlo),0,0,9.9982,0.0,9.9982
+left (Monte Carlo),10,20,9.614,0.6847,10.2987
+left (Monte Carlo),25,50,7.2558,3.6418,10.8977
+left (Monte Carlo),40,80,4.2674,6.6418,10.9092
+left (Monte Carlo),50,100,2.2678,8.6418,10.9096
+left (Monte Carlo),60,100,0.6523,9.9572,10.6095
+left (Monte Carlo),80,100,0.0022,10.0,10.0022
+left (Monte Carlo),max (step 54),100,1.548,9.3618,10.9098
+left (Monte Carlo),stationary,100,0.0,10.0,10.0

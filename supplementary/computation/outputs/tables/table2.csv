@@ -1,0 +1,5 @@
+system,steady_state,max,lowest_min_after_max,highest_max_after_min,Y_steady_state,counted_Y_share_1_to_95%,elapsed_to_X<=1%,elapsed_X_90%_to_1%
+TRTU (p_N),0.0071,0.0127,0.0058,0.0076,0.0163,60,82,43
+CSCP x1 (I),0.0249,0.0276,0.0231,0.0252,0.0566,151,299,239
+CSCP x2 (I),0.0249,0.0349,0.0223,0.0257,0.0566,102,185,128
+CSCP x3 (I),0.0249,0.0331,0.0227,0.0256,0.0566,111,209,152

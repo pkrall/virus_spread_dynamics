@@ -1,0 +1,4 @@
+system,baseline,perturbed_in-cluster_size,perturbed_cluster_reproduction_number,peak,peak/baseline,step_of_peak,excess_at_step_250,excess_at_step_250/baseline,post-intervention_steps_until_within_1%
+x1,0.25,1.0,1.125,0.5281,2.1125,219,0.1282,0.5128,237
+x2,0.25,5.484,1.028,0.5205,2.082,219,0.059,0.236,115
+x3,0.25,3.89,1.135,0.5448,2.179,219,0.0831,0.3322,143

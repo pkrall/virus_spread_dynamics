@@ -1,0 +1,19 @@
+scenario 1: fixed point p_N* in [7.1480498176833484949E-3, 7.1480498176833484950E-3]; box radius 0.00001, P = 78, |DF^P| <= 9.0719764E-1 (0s)
+scenario 2: fixed point p_N* in [2.4814424799167729418E-2, 2.4814424799167729419E-2]; box radius 0.00005, P = 27, |DF^P| <= 8.8686224E-1 (0s)
+scenario 3: fixed point p_N* in [2.6641689898855901254E-2, 2.6641689898855901255E-2]; box radius 0.00005, P = 24, |DF^P| <= 8.4615184E-1 (0s)
+scenario 4: fixed point p_N* in [3.1117912366969463531E-2, 3.1117912366969463532E-2]; box radius 0.00005, P = 15, |DF^P| <= 8.9556523E-1 (0s)
+scenario 5: fixed point p_N* in [1.8266935386000747077E-2, 1.8266935386000747078E-2]; box radius 0.00005, P = 21, |DF^P| <= 8.9164616E-1 (0s)
+Appendix A.1.3 bracket [0.02664168989885590, 0.02664168989885591]: H(lower) in [3.5299026281124811618E-18, 3.5299026281124811619E-18], H(upper) in [-2.4611090079756405227E-17, -2.4611090079756405226E-17], sign change True
+Table 1 scenario 1: box entered at step 588; extrema at steps [117, 190, 271], values [0.0127, 0.0058, 0.0076], certified True
+Table 1 scenario 2: box entered at step 229; extrema at steps [37, 61, 90], values [0.0786, 0.0155, 0.029], certified True
+Table 1 scenario 3: box entered at step 203; extrema at steps [32, 53, 79], values [0.0932, 0.0164, 0.0312], certified True
+  scenario 3: |X_203 - c|_inf <= 3.06404039240E-5 (box radius 0.00005)
+Table 1 scenario 4: box entered at step 123; extrema at steps [22, 34, 54], values [0.1473, 0.0216, 0.0347], certified True
+Table 1 scenario 5: box entered at step 154; extrema at steps [26, 41, 66], values [0.1288, 0.0112, 0.0212], certified True
+Table S1, 5-step ramp: box entered at step 92; extrema [('max', 8, 0.0458), ('min', 23, 0.0278), ('max', 40, 0.0321)], certified True
+Table S1, 10-step ramp: box entered at step 95; extrema [('max', 10, 0.0455), ('min', 25, 0.0281), ('max', 43, 0.0321)], certified True
+Table S1, 20-step ramp: box entered at step 99; extrema [('max', 14, 0.0397), ('min', 32, 0.0291), ('max', 48, 0.0317)], certified True
+Table S2, 5-step ramp: box entered at step 161; extrema [('min', 11, 0.0171), ('max', 37, 0.0307), ('min', 61, 0.0253)], certified True
+Table S2, 10-step ramp: box entered at step 163; extrema [('min', 15, 0.0178), ('max', 40, 0.0304), ('min', 64, 0.0254)], certified True
+Table S2, 20-step ramp: box entered at step 148; extrema [('min', 20, 0.0197), ('max', 48, 0.0294), ('min', 72, 0.0257)], certified True
+total time 0s
