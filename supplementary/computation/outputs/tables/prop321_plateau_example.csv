@@ -1,0 +1,9 @@
+quantity,value
+steps within 95% of maximum (integer),21
+length with linear interpolation,20.96
+minimum after plateau (% of max),46.4
+steps from last step >= 95% to minimum,14
+second maximum (% of max),64.1
+steps from minimum to second maximum,26
+range from 28 steps after second maximum (% of max),58.3-60.2
+limit (% of max),59.7
