@@ -1,0 +1,10 @@
+quantity,value
+steps of Y within 95% of its maximum,17
+window (steps after first introduction),67-83
+X at window start (% of endemic level),47.4
+X at window end (% of endemic level),13.4
+steps from window end until X < 1% of endemic level,17
+Y minimum after window (% of max),56.2
+steps from window end to minimum,26
+Y rebound maximum (% of max),76.5
+Y limit (% of max),70.4
