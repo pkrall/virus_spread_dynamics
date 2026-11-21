@@ -1,0 +1,4 @@
+system,I_X_at_step_400/stationary,steps_after_400_until_X<=1%,accounting_window,clusters_seeded_through_step_400,clusters_seeded_over_window,seeded_population_exposures_over_window
+x1,0.9949,299,0-699,7.45,22.36,22.4
+x2,0.9926,185,0-585,2.05,4.4,17.2
+x3,0.9933,209,0-609,2.68,6.2,18.3
