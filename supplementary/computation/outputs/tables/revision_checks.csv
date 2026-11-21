@@ -1,0 +1,22 @@
+check,value
+"(a) arrivals exposed 0.0, immune 0.0: max |sum of compartments - 1|",6.7e-16
+"(a) arrivals exposed 0.0, immune 0.0: minimum compartment",0
+"(a) arrivals exposed 0.05, immune 0.1: max |sum of compartments - 1|",2.2e-15
+"(a) arrivals exposed 0.05, immune 0.1: minimum compartment",0
+"(a) arrivals exposed 0.2, immune 0.3: max |sum of compartments - 1|",3.8e-15
+"(a) arrivals exposed 0.2, immune 0.3: minimum compartment",0
+"(b) scenario 1: R_df, threshold 1 - 1/R_df","1.3926, 0.2819"
+"(b) scenario 1, z = 0.000, (1-z)R_df = 1.393: simulated p_N, fixed point","7.148e-03, 7.148e-03"
+"(b) scenario 1, z = 0.100, (1-z)R_df = 1.253: simulated p_N, fixed point","4.612e-03, 4.612e-03"
+"(b) scenario 1, z = 0.232, (1-z)R_df = 1.070: simulated p_N, fixed point","1.268e-03, 1.268e-03"
+"(b) scenario 1, z = 0.272, (1-z)R_df = 1.014: simulated p_N, fixed point","2.536e-04, 2.536e-04"
+"(b) scenario 1, z = 0.302, (1-z)R_df = 0.972: simulated p_N, fixed point","1.054e-14, 0.000e+00"
+"(b) scenario 3: R_df, threshold 1 - 1/R_df","3.9490, 0.7468"
+"(b) scenario 3, z = 0.000, (1-z)R_df = 3.949: simulated p_N, fixed point","2.664e-02, 2.664e-02"
+"(b) scenario 3, z = 0.100, (1-z)R_df = 3.554: simulated p_N, fixed point","2.308e-02, 2.308e-02"
+"(b) scenario 3, z = 0.697, (1-z)R_df = 1.197: simulated p_N, fixed point","1.784e-03, 1.784e-03"
+"(b) scenario 3, z = 0.737, (1-z)R_df = 1.039: simulated p_N, fixed point","3.569e-04, 3.569e-04"
+"(b) scenario 3, z = 0.767, (1-z)R_df = 0.921: simulated p_N, fixed point","1.554e-15, 0.000e+00"
+(c) x1 (mass action): R_c at Gamma = 10; after rho x Gamma/(Gamma-1),0.9000; 1.0000
+(c) x2: R_c at Gamma = 10; after rho x Gamma/(Gamma-1),0.6000; 0.6667
+(c) x3: R_c at Gamma = 10; after rho x Gamma/(Gamma-1),0.7000; 0.7778
