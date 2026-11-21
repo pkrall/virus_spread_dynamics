@@ -1,4 +1,4 @@
-"""Computer-assisted proofs for the TRTU examples (Theorem 3.1.3, Table 1, Tables S1 and S2).
+"""Computer-assisted proofs for the TRTU examples (Lemma A.1.1 and Appendix B.1.1; Table 2 of the article, Tables S1 and S2).
 
 Delayed state X_t = (p_S(t), p_N(t-1), ..., p_N(t-L)),  L = D_E + D_I,  d = D_E + 1,  q = 1 - m.
 One-step map  F(s, h_1..h_L) = (q s u^K + m,  s (1 - u^K),  h_1, ..., h_{L-1}),

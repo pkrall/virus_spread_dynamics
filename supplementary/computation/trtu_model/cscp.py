@@ -61,7 +61,7 @@ def solve_rb(n, DE, DI, target, lo=0.0, hi=1.0, iters=80):
 
 
 def response(kappa, g):
-    """Exposure intensity I(t) = sum_a g(a) kappa(t - a) (Corollary 3.3.4)."""
+    """Exposure intensity I(t) = sum_a g(a) kappa(t - a) (Corollary A.2.3)."""
     return np.convolve(kappa, g)[:len(kappa)]
 
 
@@ -73,7 +73,7 @@ def reed_frost_mean(n, pi):
     return sum(k * comb(n - 1, k - 1) * p[k] * q ** (k * (n - k)) for k in range(1, n + 1))
 
 
-# ---------------------------------------------------------------- perturbations (Corollary 3.3.6)
+# ---------------------------------------------------------------- perturbations (Corollary A.7.2)
 def _chain(n, DE, DI, rbs):
     start = (n - 1, 1) + (0,) * (DE - 1) + (0,) * DI + (0,)
     def succ(st, rb):

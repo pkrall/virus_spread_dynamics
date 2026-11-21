@@ -9,14 +9,18 @@ Definitions (main specification; see PARAMS):
   qualifying week at least MIN_SEQ sequences with known variant
   Alpha established  first of K consecutive qualifying weeks with Alpha share >= ALPHA_EST
   Delta established  first of K consecutive qualifying weeks (from Alpha establishment on) with Delta share >= DELTA_EST
-  endpoint        first of two consecutive calendar weeks, both qualifying, with Alpha share < ALPHA_END
+  endpoint        first of two consecutive calendar weeks, both qualifying, with an observed Alpha share < ALPHA_END;
+                  the Alpha detections and sequences of the two endpoint weeks are pooled, and the one-sided
+                  95% Clopper-Pearson upper bound of the Alpha share is reported
+  consecutive     always adjacent calendar weeks that both qualify (the ECDC file has a row for every week)
   violation       a qualifying week strictly between Alpha and Delta establishment with Alpha share < ALPHA_END
 
-Output: table_s7.csv (Table S7 of Online Resource 1) and sensitivity.csv.
+Output: table_s6.csv (Table S6 of Online Resource 1) and sensitivity.csv.
 Usage: python alpha_delta_ordering.py strain_data.csv outdir
 """
 import sys, itertools
 import numpy as np, pandas as pd
+from scipy.stats import beta
 
 EU = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'Estonia', 'Finland', 'France',
       'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands',
@@ -69,7 +73,10 @@ def analyse(w, MIN_SEQ, ALPHA_EST, DELTA_EST, ALPHA_END, K, FIRST, LAST):
                          qualifying_weeks_between=len(between),
                          min_alpha_share_between=(round(100 * min(pa[i] for i in between), 1) if between else np.nan),
                          violations=sum(pa[i] < ALPHA_END for i in between), endpoint=yw(tE),
-                         weeks_delta_to_endpoint=(tE - tD if (tE is not None and tD is not None) else np.nan)))
+                         weeks_delta_to_endpoint=(tE - tD if (tE is not None and tD is not None) else np.nan),
+                         endpoint_alpha=(int(g.alpha[tE] + g.alpha[tE + 1]) if tE is not None else np.nan),
+                         endpoint_sequences=(int(g.n[tE] + g.n[tE + 1]) if tE is not None else np.nan),
+                         endpoint_upper95_pct=(round(100 * float(beta.ppf(0.95, g.alpha[tE] + g.alpha[tE + 1] + 1, g.n[tE] + g.n[tE + 1] - g.alpha[tE] - g.alpha[tE + 1])), 2) if tE is not None else np.nan)))
     return pd.DataFrame(rows)
 
 
@@ -84,7 +91,7 @@ if __name__ == '__main__':
     path, out = sys.argv[1], sys.argv[2]
     w = weekly(path)
     r = analyse(w, **PARAMS)
-    r.to_csv(f'{out}/table_s7.csv', index=False)
+    r.to_csv(f'{out}/table_s6.csv', index=False)
     print('main specification', PARAMS, summary(r))
     sens = []
     for n, a, b in itertools.product([20, 30, 50, 100], [0.25, 0.5], [0.05, 0.1, 0.5]):

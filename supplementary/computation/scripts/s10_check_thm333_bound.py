@@ -1,4 +1,4 @@
-"""Numerical check (not part of a proof) of the bound in Theorem 3.3.3(a): ratio of the limiting decay rates
+"""Numerical check (not part of a proof) of the bound in Lemma A.2.2(a): ratio of the limiting decay rates
 against 2A/B over a parameter grid, and depletion-length ratios along a family with in-cluster probability -> 1."""
 import numpy as np
 from scipy.optimize import brentq

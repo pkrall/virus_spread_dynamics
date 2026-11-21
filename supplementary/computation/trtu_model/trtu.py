@@ -93,7 +93,7 @@ def successive_extrema(x, kinds, start=1, horizon=None):
 
 
 def replacement_times(NX, NY, X_star, TsY):
-    """Table S3 / Table 2 conventions.
+    """Table S3 / Table 3 conventions.
     counted_1_95: steps from the first step after seeding at which the Y share reaches 1% to the first
                   step at which it reaches 95%, both included;
     elapsed_to_1: elapsed steps after the seeding of Y until X <= 1% of its X-only level;
