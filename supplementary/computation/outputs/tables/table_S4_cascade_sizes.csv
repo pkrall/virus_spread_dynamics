@@ -1,0 +1,6 @@
+group,quantity,exact,Monte_Carlo_or_total
+left,X,9.998233160032312,9.99818
+left,Y,9.999999999996447,10.0
+right,"X (within-cluster, total)",7.59998304,8.22508836
+right,"Y (within-cluster, total)",9.98781618,11.41266064
+right,"cluster reproduction factors X, Y",0.07599983,0.1248477
